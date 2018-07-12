@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vighnesh/project_4/project_4.sim/sim_2/synth/timing/xsim/cell_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module \cell%SP
+INFO: [VRFC 10-311] analyzing module mm_unit
+INFO: [VRFC 10-311] analyzing module simple_multiplier
+INFO: [VRFC 10-311] analyzing module simple_multiplier_0
+INFO: [VRFC 10-311] analyzing module simple_multiplier_1
+INFO: [VRFC 10-311] analyzing module simple_multiplier_2
+INFO: [VRFC 10-311] analyzing module glbl

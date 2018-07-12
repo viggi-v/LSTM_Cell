@@ -1,0 +1,7 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx18/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 5e6b13944e8945768766824097b735af --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sigmoid_unit_behav xil_defaultlib.sigmoid_unit -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-322] array element type cannot be unconstrained [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd:6]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit sigmoid_unit in library work failed.
