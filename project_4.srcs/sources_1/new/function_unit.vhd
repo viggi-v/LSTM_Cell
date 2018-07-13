@@ -1,5 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.Numeric_std.all;
+
+
 library xil_defaultlib;
 
 use xil_defaultlib.package_interface.all;
@@ -31,7 +34,7 @@ signal C_vector         : vector(H-1 downto 0)(data_width-1 downto 0);
 signal C_vector_in      : vector(H-1 downto 0)(data_width-1 downto 0);
 signal D_vector         : vector(H-1 downto 0)(data_width-1 downto 0);
 signal S_vector         : vector(H-1 downto 0)(2*data_width downto 0);
-signal dummy_zero       : std_logic_vector(2*data_width downto 0);
+signal dummy_zero       : signed(2*data_width downto 0);
 
 constant LOAD : STD_LOGIC := '0';
 constant SUM  : STD_LOGIC := '1';
@@ -48,6 +51,7 @@ constant coefficient_matrix : matrix(5 downto 0)(2 downto 0)(data_width-1 downto
                                                   ("0000011111111000","0000010001011100","1111111101011010"),
                                                   ("0000110010111111","0000000100100101","1111111111100110"),
                                                   ("1111111111111111","1111111111111111","1111111111111111"));
+                                                  
 constant condition_vector : vector(5 downto 0) := ("1111111111111010",
                                                    "1101000000000000",
                                                    "0000000000000000",
@@ -65,10 +69,10 @@ component MULT_ACC_LD
                 CLK           : in  std_logic;
                 RST           : in  std_logic;                                    -- Synchronous reset
                 CE            : in  std_logic;                                    -- Enable
-                Ain, Bin, Cin : in  std_logic_vector(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
+                Ain, Bin, Cin : in  signed(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
                 SUM           : in  std_logic;                                    -- Active high command to use it as adder
                 
-                S             : out std_logic_vector(2*data_width downto 0)       -- Accumulator output
+                S             : out signed(2*data_width downto 0)       -- Accumulator output
             );                               
 end component;
 
@@ -118,6 +122,7 @@ condition4      <= 0 when input(3) < condition_vector(0) else
                    3 when input(3) < condition_vector(3) else
                    4 when input(3) < condition_vector(4) else
                    5;
+                  
                    
 assign_coefficient_gen: for I in 0 to H-1 generate
     B_vector(I) <= coefficient_matrix(0)(2) when input(I) < condition_vector(0) else

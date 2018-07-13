@@ -2,11 +2,11 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Thu Jul 12 15:23:00 2018
-# Process ID: 26376
+# Start of session at: Fri Jul 13 13:19:18 2018
+# Process ID: 9842
 # Current directory: /home/vighnesh/project_4/project_4.runs/synth_1
-# Command line: vivado -log ram_cell.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_cell.tcl
-# Log file: /home/vighnesh/project_4/project_4.runs/synth_1/ram_cell.vds
+# Command line: vivado -log sigmoid_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sigmoid_unit.tcl
+# Log file: /home/vighnesh/project_4/project_4.runs/synth_1/sigmoid_unit.vds
 # Journal file: /home/vighnesh/project_4/project_4.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source ram_cell.tcl -notrace
+source sigmoid_unit.tcl -notrace

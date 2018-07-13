@@ -2,3 +2,6 @@ Running: xsim.dir/ram_cell_time_synth/xsimk -simmode gui -wdb ram_cell_time_synt
 Design successfully loaded
 Design Loading Memory Usage: 62340 KB (Peak: 62340 KB)
 Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 144932 KB (Peak: 209612 KB)
+Simulation CPU Usage: 220 ms

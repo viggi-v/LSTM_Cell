@@ -1,73 +1,33 @@
 Vivado Simulator 2018.1
 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx18/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 5e6b13944e8945768766824097b735af --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot ram_cell_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.ram_cell xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx18/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 5e6b13944e8945768766824097b735af --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot sigmoid_unit_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.sigmoid_unit xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
-INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "ram_cell_time_synth.sdf", for root module "ram_cell".
-INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "ram_cell_time_synth.sdf", for root module "ram_cell".
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "sigmoid_unit_time_synth.sdf", for root module "sigmoid_unit".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "sigmoid_unit_time_synth.sdf", for root module "sigmoid_unit".
 Time Resolution for simulation is 1ps
 Compiling module simprims_ver.IBUF
 Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.CARRY4
 Compiling module simprims_ver.x_lut2_mux4
 Compiling module simprims_ver.LUT2
-Compiling module simprims_ver.RAMD32
-Compiling module xil_defaultlib.RAM32X1D_UNIQ_BASE_
-Compiling module xil_defaultlib.RAM32X1D_HD404
-Compiling module xil_defaultlib.RAM32X1D_HD405
-Compiling module xil_defaultlib.RAM32X1D_HD406
-Compiling module xil_defaultlib.RAM32X1D_HD407
-Compiling module xil_defaultlib.RAM32X1D_HD408
-Compiling module xil_defaultlib.RAM32X1D_HD409
-Compiling module xil_defaultlib.RAM32X1D_HD410
-Compiling module xil_defaultlib.dual_port_ram
-Compiling module xil_defaultlib.RAM32X1D_HD411
-Compiling module xil_defaultlib.RAM32X1D_HD412
-Compiling module xil_defaultlib.RAM32X1D_HD413
-Compiling module xil_defaultlib.RAM32X1D_HD414
-Compiling module xil_defaultlib.RAM32X1D_HD415
-Compiling module xil_defaultlib.RAM32X1D_HD416
-Compiling module xil_defaultlib.RAM32X1D_HD417
-Compiling module xil_defaultlib.RAM32X1D_HD418
-Compiling module xil_defaultlib.dual_port_ram_0
-Compiling module xil_defaultlib.RAM32X1D_HD419
-Compiling module xil_defaultlib.RAM32X1D_HD420
-Compiling module xil_defaultlib.RAM32X1D_HD421
-Compiling module xil_defaultlib.RAM32X1D_HD422
-Compiling module xil_defaultlib.RAM32X1D_HD423
-Compiling module xil_defaultlib.RAM32X1D_HD424
-Compiling module xil_defaultlib.RAM32X1D_HD425
-Compiling module xil_defaultlib.RAM32X1D_HD426
-Compiling module xil_defaultlib.dual_port_ram_1
-Compiling module xil_defaultlib.RAM32X1D_HD427
-Compiling module xil_defaultlib.RAM32X1D_HD428
-Compiling module xil_defaultlib.RAM32X1D_HD429
-Compiling module xil_defaultlib.RAM32X1D_HD430
-Compiling module xil_defaultlib.RAM32X1D_HD431
-Compiling module xil_defaultlib.RAM32X1D_HD432
-Compiling module xil_defaultlib.RAM32X1D_HD433
-Compiling module xil_defaultlib.RAM32X1D_HD434
-Compiling module xil_defaultlib.dual_port_ram_2
-Compiling module simprims_ver.LUT6
-Compiling module simprims_ver.x_lut3_mux8
-Compiling module simprims_ver.LUT3
-Compiling module simprims_ver.FDRE_default
-Compiling module simprims_ver.MUXF7
-Compiling module simprims_ver.FDRE(INIT=1'b1)
-Compiling module simprims_ver.CARRY4
-Compiling module simprims_ver.LUT4
-Compiling module simprims_ver.LUT5
-Compiling module xil_defaultlib.simple_multiplier
-Compiling module xil_defaultlib.simple_multiplier_3
-Compiling module xil_defaultlib.simple_multiplier_4
-Compiling module xil_defaultlib.simple_multiplier_5
-Compiling module xil_defaultlib.mm_unit
 Compiling module simprims_ver.x_lut1_mux2
 Compiling module simprims_ver.LUT1
-Compiling module simprims_ver.OBUFT
-Compiling module xil_defaultlib.ram_cell
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.MULT_ACC_LD
+Compiling module xil_defaultlib.MULT_ACC_LD_0
+Compiling module xil_defaultlib.MULT_ACC_LD_1
+Compiling module xil_defaultlib.MULT_ACC_LD_2
+Compiling module xil_defaultlib.sigmoid_unit
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot ram_cell_time_synth
+Built simulation snapshot sigmoid_unit_time_synth

@@ -46,8 +46,8 @@ component simple_multiplier
         CLK           : in std_logic;
         RST           : in std_logic;                                    -- Synchronous reset
         CE            : in std_logic;                                    -- Enable
-        Ain, Bin      : in std_logic_vector(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
-        S             : out std_logic_vector(2*data_width downto 0)      -- Accumulator output
+        Ain, Bin      : in signed(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
+        S             : out signed(2*data_width downto 0)      -- Accumulator output
     );                               
 end component;
 
@@ -55,10 +55,10 @@ end component;
 
 -- placeholder signals 
 
-signal A_signal            : std_logic_vector(data_width-1 downto 0);
+signal A_signal            : signed(data_width-1 downto 0);
 -- signal B_matrix         : matrix(H-1 downto 0)(data_width-1 downto 0);
 signal S_vector            : vector(H-1 downto 0)(2*data_width downto 0);
-signal dummy_zero          : std_logic_vector(data_width - 1 downto 0) := (others=> '0');
+signal dummy_zero          : signed(data_width - 1 downto 0) := (others=> '0');
 
 signal single_loop_counter : integer range 0 to 7 := 0;
 

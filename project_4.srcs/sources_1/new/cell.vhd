@@ -28,7 +28,7 @@ entity ram_cell is
 end ram_cell;
 
 
-architecture Behavioral of ram_cell is
+ architecture Behavioral of ram_cell is
 
 
 component mm_unit
@@ -49,18 +49,25 @@ component mm_unit
 end component;
 
 component dual_port_ram 
-port(   clk: in std_logic; --clock
+    generic(
+            data_width : integer := 16;
+            addr_width : integer := 4;
+            size       : integer := 4
+        );
+    port(   
+        clk: in std_logic; --clock
         wr_en : in std_logic;   --write enable for port 0
-        data_in : in std_logic_vector(7 downto 0);  --Input data to port 0.
-        addr_in_0 : in std_logic_vector(3 downto 0);    --address for port 0
-        addr_in_1 : in std_logic_vector(3 downto 0);    --address for port 1
+        data_in : in signed(data_width - 1 downto 0);  --Input data to port 0.
+        addr_in_0 : in std_logic_vector(addr_width - 1 downto 0);    --address for port 0
+        addr_in_1 : in std_logic_vector(addr_width - 1 downto 0);    --address for port 1
         port_en_0 : in std_logic;   --enable port 0.
         port_en_1 : in std_logic;   --enable port 1.
-        data_out_0 : out std_logic_vector(7 downto 0);  --output data from port 0.
-        data_out_1 : out std_logic_vector(7 downto 0)   --output data from port 1.
+        data_out_0 : out signed(data_width - 1 downto 0);  --output data from port 0.
+        data_out_1 : out signed(data_width - 1 downto 0)   --output data from port 1.
     );
 end component;
 
+-- signals for RAM
 signal wr_en, port_en_0, port_en_1 : std_logic := '0';
 signal read_addr, wr_addr : std_logic_vector(3 downto 0);
 signal dummy_signal : vector(H-1 downto 0)(data_width - 1 downto 0);
@@ -76,6 +83,11 @@ signal present_state: states := state_idle;
 begin
 generate_BRAM_module: for I in 0 to H-1 generate
     bram_instance: dual_port_ram
+        generic map(
+                data_width => 8,
+                addr_width => 4,
+                size => 15
+            )
         port map(
             clk => CLK,
             wr_en => wr_en,
