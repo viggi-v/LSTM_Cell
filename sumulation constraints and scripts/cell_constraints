@@ -1,0 +1,69 @@
+add_force {/ram_cell/CLK} -radix hex {0 0ns} {1 2500ps} -repeat_every 5000ps
+add_force {/ram_cell/RST} -radix hex {0 0ns}
+add_force {/ram_cell/start_bram_assign} -radix hex {1 0ns}
+add_force {/ram_cell/start_mul} -radix hex {0 0ns}
+
+
+add_force {/ram_cell/\input_vector[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\input_vector[1] } -radix hex {02 0ns}
+add_force {/ram_cell/\input_vector[2] } -radix hex {03 0ns}
+add_force {/ram_cell/\input_vector[3] } -radix hex {04 0ns}
+add_force {/ram_cell/\input_vector[4] } -radix hex {05 0ns}
+add_force {/ram_cell/\input_vector[5] } -radix hex {06 0ns}
+add_force {/ram_cell/\input_vector[6] } -radix hex {07 0ns}
+add_force {/ram_cell/\input_vector[7] } -radix hex {08 0ns}
+
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
+run 5 ns
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+run 5 ns
+
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
+run 5 ns
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+run 5 ns
+
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
+run 5 ns
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+run 5 ns
+
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
+run 5 ns
+add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+run 5 ns
+
+add_force {/ram_cell/start_bram_assign} -radix hex {0 0ns}
+add_force {/ram_cell/start_mul} -radix hex {1 0ns}
+
+run 15ns
+
+476. 229
+
+146 luts and 8 dsp blocks
+
+420 LUTs and 0 dsp blocks

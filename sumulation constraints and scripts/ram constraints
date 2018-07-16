@@ -1,0 +1,27 @@
+add_force {/dual_port_ram/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/dual_port_ram/addr_in_0[0]} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/dual_port_ram/addr_in_0[1]} -radix hex {0 0ns} {1 20000ps} -repeat_every 40000ps
+add_force {/dual_port_ram/addr_in_0[2]} -radix hex {0 0ns} {1 40000ps} -repeat_every 80000ps
+add_force {/dual_port_ram/addr_in_0[3]} -radix hex {0 0ns} {1 80000ps} -repeat_every 160000ps
+
+add_force {/dual_port_ram/data_in[7]} -radix hex {0 0ns}
+add_force {/dual_port_ram/data_in[6]} -radix hex {0 0ns}
+add_force {/dual_port_ram/data_in[5]} -radix hex {0 0ns}
+add_force {/dual_port_ram/data_in[4]} -radix hex {0 0ns}
+add_force {/dual_port_ram/data_in[3]} -radix hex {0 0ns} {1 80000ps} -repeat_every 160000ps
+add_force {/dual_port_ram/data_in[1]} -radix hex {0 0ns} {1 40000ps} -repeat_every 80000ps
+add_force {/dual_port_ram/data_in[0]} -radix hex {0 0ns} {1 20000ps} -repeat_every 40000ps
+add_force {/dual_port_ram/data_in[2]} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/dual_port_ram/wr_en} -radix hex {1 0ns}
+add_force {/dual_port_ram/port_en_0} -radix hex {1 0ns}
+add_force {/dual_port_ram/port_en_1} -radix hex {0 0ns}
+
+
+run 160ns
+add_force {/dual_port_ram/wr_en} -radix hex {0 0ns}
+add_force {/dual_port_ram/port_en_1} -radix hex {1 0ns}
+
+add_force {/dual_port_ram/addr_in_1[0]} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/dual_port_ram/addr_in_1[1]} -radix hex {0 0ns} {1 20000ps} -repeat_every 40000ps
+add_force {/dual_port_ram/addr_in_1[2]} -radix hex {0 0ns} {1 40000ps} -repeat_every 80000ps
+add_force {/dual_port_ram/addr_in_1[3]} -radix hex {0 0ns} {1 80000ps} -repeat_every 160000ps

@@ -28,11 +28,12 @@ set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys_video:part0:1.1 [current_project]
 set_property ip_output_repo /home/vighnesh/project_4/project_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib {
-  /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/new/max.vhd
-  /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd
+read_vhdl -vhdl2008 -library xil_defaultlib {
+  /home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd
+  /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd
+  /home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd
 }
-read_vhdl -vhdl2008 -library xil_defaultlib /home/vighnesh/project_4/project_4.srcs/sources_1/new/function_unit.vhd
+read_vhdl -library xil_defaultlib /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -44,12 +45,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top sigmoid_unit -part xc7a200tsbg484-1
+synth_design -top ram_cell -part xc7a200tsbg484-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef sigmoid_unit.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file sigmoid_unit_utilization_synth.rpt -pb sigmoid_unit_utilization_synth.pb"
+write_checkpoint -force -noxdef ram_cell.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file ram_cell_utilization_synth.rpt -pb ram_cell_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

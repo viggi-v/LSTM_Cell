@@ -3,137 +3,89 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="ram_cell_time_synth.wdb" id="1">
+      <db_ref path="sigmoid_unit_time_synth.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="ram_cell" />
+            <top_module name="sigmoid_unit" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1112405590fs"></ZoomStartTime>
-      <ZoomEndTime time="1120748054fs"></ZoomEndTime>
-      <Cursor1Time time="1113796000fs"></Cursor1Time>
+      <ZoomStartTime time="1015670725fs"></ZoomStartTime>
+      <ZoomEndTime time="1020865856fs"></ZoomEndTime>
+      <Cursor1Time time="1016486000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="228"></NameColumnWidth>
-      <ValueColumnWidth column_width="377"></ValueColumnWidth>
+      <ValueColumnWidth column_width="365"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
-   <wvobject type="logic" fp_name="/ram_cell/RST">
-      <obj_property name="ElementShortName">RST</obj_property>
-      <obj_property name="ObjectShortName">RST</obj_property>
+   <WVObjectSize size="16" />
+   <wvobject type="logic" fp_name="/sigmoid_unit/CE">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/CLK">
+   <wvobject type="logic" fp_name="/sigmoid_unit/CLK">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/done">
+   <wvobject type="logic" fp_name="/sigmoid_unit/RST">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sigmoid_unit/condition1">
+      <obj_property name="ElementShortName">condition1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">condition1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sigmoid_unit/condition2">
+      <obj_property name="ElementShortName">condition2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">condition2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sigmoid_unit/condition3">
+      <obj_property name="ElementShortName">condition3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">condition3[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sigmoid_unit/condition4">
+      <obj_property name="ElementShortName">condition4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">condition4[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sigmoid_unit/done">
       <obj_property name="ElementShortName">done</obj_property>
       <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\read_bram_value[0] ">
-      <obj_property name="ElementShortName">\read_bram_value[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\read_bram_value[0] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\input[0] ">
+      <obj_property name="ElementShortName">\input[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input[0] [15:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\read_bram_value[1] ">
-      <obj_property name="ElementShortName">\read_bram_value[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\read_bram_value[1] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\input[1] ">
+      <obj_property name="ElementShortName">\input[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input[1] [15:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\read_bram_value[2] ">
-      <obj_property name="ElementShortName">\read_bram_value[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\read_bram_value[2] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\input[2] ">
+      <obj_property name="ElementShortName">\input[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input[2] [15:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\read_bram_value[3] ">
-      <obj_property name="ElementShortName">\read_bram_value[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\read_bram_value[3] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\input[3] ">
+      <obj_property name="ElementShortName">\input[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input[3] [15:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\write_bram_value[0] ">
-      <obj_property name="ElementShortName">\write_bram_value[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\write_bram_value[0] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\output[0] ">
+      <obj_property name="ElementShortName">\output[0] [64:0]</obj_property>
+      <obj_property name="ObjectShortName">\output[0] [64:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\write_bram_value[1] ">
-      <obj_property name="ElementShortName">\write_bram_value[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\write_bram_value[1] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\output[1] ">
+      <obj_property name="ElementShortName">\output[1] [64:0]</obj_property>
+      <obj_property name="ObjectShortName">\output[1] [64:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\write_bram_value[2] ">
-      <obj_property name="ElementShortName">\write_bram_value[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\write_bram_value[2] [7:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\output[2] ">
+      <obj_property name="ElementShortName">\output[2] [64:0]</obj_property>
+      <obj_property name="ObjectShortName">\output[2] [64:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\write_bram_value[3] ">
-      <obj_property name="ElementShortName">\write_bram_value[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\write_bram_value[3] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/start_bram_assign">
-      <obj_property name="ElementShortName">start_bram_assign</obj_property>
-      <obj_property name="ObjectShortName">start_bram_assign</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/read">
-      <obj_property name="ElementShortName">read[3:0]</obj_property>
-      <obj_property name="ObjectShortName">read[3:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\S[0] ">
-      <obj_property name="ElementShortName">\S[0] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S[0] [16:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\S[1] ">
-      <obj_property name="ElementShortName">\S[1] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S[1] [16:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\S[2] ">
-      <obj_property name="ElementShortName">\S[2] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S[2] [16:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\S[3] ">
-      <obj_property name="ElementShortName">\S[3] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S[3] [16:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/start_bram_read">
-      <obj_property name="ElementShortName">start_bram_read</obj_property>
-      <obj_property name="ObjectShortName">start_bram_read</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[0] ">
-      <obj_property name="ElementShortName">\input_vector[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[0] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[1] ">
-      <obj_property name="ElementShortName">\input_vector[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[1] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[2] ">
-      <obj_property name="ElementShortName">\input_vector[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[2] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[3] ">
-      <obj_property name="ElementShortName">\input_vector[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[3] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[4] ">
-      <obj_property name="ElementShortName">\input_vector[4] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[4] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[5] ">
-      <obj_property name="ElementShortName">\input_vector[5] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[5] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[6] ">
-      <obj_property name="ElementShortName">\input_vector[6] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[6] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/\input_vector[7] ">
-      <obj_property name="ElementShortName">\input_vector[7] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[7] [7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/start_mul">
-      <obj_property name="ElementShortName">start_mul</obj_property>
-      <obj_property name="ObjectShortName">start_mul</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/ram_cell/state">
-      <obj_property name="ElementShortName">state[1:0]</obj_property>
-      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   <wvobject type="array" fp_name="/sigmoid_unit/\output[3] ">
+      <obj_property name="ElementShortName">\output[3] [64:0]</obj_property>
+      <obj_property name="ObjectShortName">\output[3] [64:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
