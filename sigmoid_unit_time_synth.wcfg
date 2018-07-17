@@ -3,89 +3,125 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="sigmoid_unit_time_synth.wdb" id="1">
+      <db_ref path="mmx_unit_time_synth.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="sigmoid_unit" />
+            <top_module name="mmx_unit" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1015670725fs"></ZoomStartTime>
-      <ZoomEndTime time="1020865856fs"></ZoomEndTime>
-      <Cursor1Time time="1016486000fs"></Cursor1Time>
+      <ZoomStartTime time="988450000fs"></ZoomStartTime>
+      <ZoomEndTime time="1168450001fs"></ZoomEndTime>
+      <Cursor1Time time="1038450000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="228"></NameColumnWidth>
-      <ValueColumnWidth column_width="365"></ValueColumnWidth>
+      <ValueColumnWidth column_width="349"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
-   <wvobject type="logic" fp_name="/sigmoid_unit/CE">
+   <WVObjectSize size="25" />
+   <wvobject type="array" fp_name="/mmx_unit/input_1">
+      <obj_property name="ElementShortName">input_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_2[0] ">
+      <obj_property name="ElementShortName">\input_2[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_2[0] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_2[1] ">
+      <obj_property name="ElementShortName">\input_2[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_2[1] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_2[2] ">
+      <obj_property name="ElementShortName">\input_2[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_2[2] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_2[3] ">
+      <obj_property name="ElementShortName">\input_2[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_2[3] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_3[0] ">
+      <obj_property name="ElementShortName">\input_3[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_3[0] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_3[1] ">
+      <obj_property name="ElementShortName">\input_3[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_3[1] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_3[2] ">
+      <obj_property name="ElementShortName">\input_3[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_3[2] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\input_3[3] ">
+      <obj_property name="ElementShortName">\input_3[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_3[3] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mmx_unit/mode">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\weight_vector[0] ">
+      <obj_property name="ElementShortName">\weight_vector[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\weight_vector[0] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\weight_vector[1] ">
+      <obj_property name="ElementShortName">\weight_vector[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\weight_vector[1] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\weight_vector[2] ">
+      <obj_property name="ElementShortName">\weight_vector[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\weight_vector[2] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/mmx_unit/\weight_vector[3] ">
+      <obj_property name="ElementShortName">\weight_vector[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\weight_vector[3] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/mmx_unit/CE">
       <obj_property name="ElementShortName">CE</obj_property>
       <obj_property name="ObjectShortName">CE</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/sigmoid_unit/CLK">
+   <wvobject type="logic" fp_name="/mmx_unit/CLK">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/sigmoid_unit/RST">
+   <wvobject type="logic" fp_name="/mmx_unit/RST">
       <obj_property name="ElementShortName">RST</obj_property>
       <obj_property name="ObjectShortName">RST</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/condition1">
-      <obj_property name="ElementShortName">condition1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">condition1[31:0]</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/\S[0] ">
+      <obj_property name="ElementShortName">\S[0] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S[0] [32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/condition2">
-      <obj_property name="ElementShortName">condition2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">condition2[31:0]</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/\S[1] ">
+      <obj_property name="ElementShortName">\S[1] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S[1] [32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/condition3">
-      <obj_property name="ElementShortName">condition3[31:0]</obj_property>
-      <obj_property name="ObjectShortName">condition3[31:0]</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/\S[2] ">
+      <obj_property name="ElementShortName">\S[2] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S[2] [32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/condition4">
-      <obj_property name="ElementShortName">condition4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">condition4[31:0]</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/\S[3] ">
+      <obj_property name="ElementShortName">\S[3] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S[3] [32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/sigmoid_unit/done">
+   <wvobject type="logic" fp_name="/mmx_unit/done">
       <obj_property name="ElementShortName">done</obj_property>
       <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\input[0] ">
-      <obj_property name="ElementShortName">\input[0] [15:0]</obj_property>
-      <obj_property name="ObjectShortName">\input[0] [15:0]</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/loop_counter">
+      <obj_property name="ElementShortName">loop_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">loop_counter[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\input[1] ">
-      <obj_property name="ElementShortName">\input[1] [15:0]</obj_property>
-      <obj_property name="ObjectShortName">\input[1] [15:0]</obj_property>
+   <wvobject type="logic" fp_name="/mmx_unit/present_state">
+      <obj_property name="ElementShortName">present_state</obj_property>
+      <obj_property name="ObjectShortName">present_state</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\input[2] ">
-      <obj_property name="ElementShortName">\input[2] [15:0]</obj_property>
-      <obj_property name="ObjectShortName">\input[2] [15:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\input[3] ">
-      <obj_property name="ElementShortName">\input[3] [15:0]</obj_property>
-      <obj_property name="ObjectShortName">\input[3] [15:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\output[0] ">
-      <obj_property name="ElementShortName">\output[0] [64:0]</obj_property>
-      <obj_property name="ObjectShortName">\output[0] [64:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\output[1] ">
-      <obj_property name="ElementShortName">\output[1] [64:0]</obj_property>
-      <obj_property name="ObjectShortName">\output[1] [64:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\output[2] ">
-      <obj_property name="ElementShortName">\output[2] [64:0]</obj_property>
-      <obj_property name="ObjectShortName">\output[2] [64:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/sigmoid_unit/\output[3] ">
-      <obj_property name="ElementShortName">\output[3] [64:0]</obj_property>
-      <obj_property name="ObjectShortName">\output[3] [64:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/mmx_unit/statesig">
+      <obj_property name="ElementShortName">statesig[1:0]</obj_property>
+      <obj_property name="ObjectShortName">statesig[1:0]</obj_property>
    </wvobject>
 </wave_config>

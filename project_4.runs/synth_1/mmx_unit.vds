@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jul 17 12:35:27 2018
+# Process ID: 12526
+# Current directory: /home/vighnesh/project_4/project_4.runs/synth_1
+# Command line: vivado -log mmx_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmx_unit.tcl
+# Log file: /home/vighnesh/project_4/project_4.runs/synth_1/mmx_unit.vds
+# Journal file: /home/vighnesh/project_4/project_4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source mmx_unit.tcl -notrace
+Command: synth_design -top mmx_unit -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12531 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1268.754 ; gain = 84.875 ; free physical = 8902 ; free virtual = 28101
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mmx_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:32]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'simple_multiplier' (1#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:68]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:68]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'mmx_unit' (2#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:32]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1314.363 ; gain = 130.484 ; free physical = 8913 ; free virtual = 28112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1314.363 ; gain = 130.484 ; free physical = 8913 ; free virtual = 28112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1322.367 ; gain = 138.488 ; free physical = 8913 ; free virtual = 28111
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'mmx_unit'
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                             0001 |                               00
+                 iSTATE2 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+*
+                  iSTATE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'mmx_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.375 ; gain = 146.496 ; free physical = 8905 ; free virtual = 28103
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mmx_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module simple_multiplier 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+DSP Report: Generating DSP generate_mac_units[0].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[0].mul0/BinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/ACC_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/MULTR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/plusOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/multOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[1].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[1].mul0/BinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/AinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/ACC_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/MULTR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/plusOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/multOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[2].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[2].mul0/BinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/AinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/ACC_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/MULTR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/plusOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/multOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[3].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[3].mul0/BinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/AinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/ACC_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/MULTR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/plusOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/multOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8695 ; free virtual = 27895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|simple_multiplier | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8694 ; free virtual = 27894
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27893
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |DSP48E1 |     4|
+|3     |LUT1    |     2|
+|4     |LUT2    |     5|
+|5     |LUT3    |     1|
+|6     |LUT4    |   129|
+|7     |LUT5    |     3|
+|8     |LUT6    |     1|
+|9     |FDRE    |     7|
+|10    |FDSE    |     1|
+|11    |IBUF    |   212|
+|12    |OBUF    |   135|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------+------+
+|      |Instance                       |Module              |Cells |
++------+-------------------------------+--------------------+------+
+|1     |top                            |                    |   501|
+|2     |  \generate_mac_units[0].mul0  |simple_multiplier   |    33|
+|3     |  \generate_mac_units[1].mul0  |simple_multiplier_0 |    33|
+|4     |  \generate_mac_units[2].mul0  |simple_multiplier_1 |    33|
+|5     |  \generate_mac_units[3].mul0  |simple_multiplier_2 |    34|
++------+-------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8693 ; free virtual = 27894
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.789 ; gain = 310.910 ; free physical = 8695 ; free virtual = 27895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.797 ; gain = 310.910 ; free physical = 8695 ; free virtual = 27895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 1575.789 ; gain = 397.762 ; free physical = 8662 ; free virtual = 27862
+INFO: [Common 17-1381] The checkpoint '/home/vighnesh/project_4/project_4.runs/synth_1/mmx_unit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mmx_unit_utilization_synth.rpt -pb mmx_unit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1599.801 ; gain = 0.000 ; free physical = 8661 ; free virtual = 27861
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 17 12:36:11 2018...

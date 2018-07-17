@@ -1,0 +1,81 @@
+
+add_force {/mmx_unit/CE} -radix hex {1 0ns}
+add_force {/mmx_unit/CLK} -radix hex {0 0ns} {1 2500ps} -repeat_every 5000ps
+add_force {/mmx_unit/RST} -radix hex {0 0ns}
+add_force {/mmx_unit/mode} -radix hex {1 0ns}
+
+
+add_force {/mmx_unit/\input_2[0] } -radix hex {0001 0ns}
+add_force {/mmx_unit/\input_2[1] } -radix hex {0002 0ns}
+add_force {/mmx_unit/\input_2[2] } -radix hex {0003 0ns}
+add_force {/mmx_unit/\input_2[3] } -radix hex {0004 0ns}
+
+add_force {/mmx_unit/\input_3[0] } -radix hex {0005 0ns}
+add_force {/mmx_unit/\input_3[1] } -radix hex {0006 0ns}
+add_force {/mmx_unit/\input_3[2] } -radix hex {0007 0ns}
+add_force {/mmx_unit/\input_3[3] } -radix hex {0008 0ns}
+
+run 30ns
+
+add_force {/mmx_unit/RST} -radix hex {1 0ns}
+add_force {/mmx_unit/mode} -radix hex {0 0ns}
+run 5ns
+add_force {/mmx_unit/RST} -radix hex {0 0ns}
+run 5ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {00 0ns}
+add_force {/mmx_unit/input_1} -radix hex {01 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {01 0ns}
+add_force {/mmx_unit/input_1} -radix hex {02 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {00 0ns}
+add_force {/mmx_unit/input_1} -radix hex {03 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {01 0ns}
+add_force {/mmx_unit/input_1} -radix hex {04 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {00 0ns}
+add_force {/mmx_unit/input_1} -radix hex {05 0ns}
+run 5 ns
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {01 0ns}
+add_force {/mmx_unit/input_1} -radix hex {06 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {00 0ns}
+add_force {/mmx_unit/input_1} -radix hex {07 0ns}
+run 5 ns
+
+add_force {/mmx_unit/\weight_vector[0] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[1] } -radix hex {01 0ns}
+add_force {/mmx_unit/\weight_vector[2] } -radix hex {00 0ns}
+add_force {/mmx_unit/\weight_vector[3] } -radix hex {01 0ns}
+add_force {/mmx_unit/input_1} -radix hex {08 0ns}
+run 5 ns
+
+run 35ns

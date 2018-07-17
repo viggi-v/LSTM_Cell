@@ -1,6 +1,5 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_SIGNED.ALL;   
+use IEEE.STD_LOGIC_1164.ALL; 
 use ieee.numeric_std.all;
 
 entity multiplier_with_adder is
@@ -11,19 +10,19 @@ entity multiplier_with_adder is
         CLK : in std_logic;
         RST : in std_logic; -- Synchronous reset
         CE  : in std_logic; -- enable 
-        Ain, Bin : in std_logic_vector(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
+        Ain, Bin : in signed(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
         SUM : in std_logic; -- Active high command to use it as adder
-        S : out std_logic_vector(2*data_width downto 0)  -- Accumulator output 
+        S : out signed(2*data_width downto 0)  -- Accumulator output 
     );                             
 end multiplier_with_adder;
 
 architecture Behavioral of multiplier_with_adder is
 
-signal AinR, BinR: std_logic_vector(data_width - 1 downto 0);   -- Registered Ain and Bin
+signal AinR, BinR: signed(data_width - 1 downto 0);   -- Registered Ain and Bin
 
-signal MULTR : std_logic_vector(2*data_width - 1 downto 0); -- Registered multiplier output
-signal ACC : std_logic_vector(2*data_width downto 0);-- Accumulator output
-constant dummy_ZERO : std_logic_vector(data_width - 1 downto 0) := (others => '0');
+signal MULTR : signed(2*data_width - 1 downto 0); -- Registered multiplier output
+signal ACC : signed(2*data_width downto 0);-- Accumulator output
+constant dummy_ZERO : signed(data_width - 1 downto 0) := (others => '0');
 
 begin
 
