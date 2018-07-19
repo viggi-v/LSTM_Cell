@@ -24,6 +24,7 @@ entity mmx_unit is
     
   done               : out std_logic;
   statesig              : out std_logic_vector(1 downto 0);
+  ceOut : out std_logic;
   S                  : out vector(H-1 downto 0)(2*data_width downto 0)
   );
 end mmx_unit;
@@ -87,9 +88,10 @@ B_vector <= (others => dummy_zero) when present_state = state_reset else
             weight_vector when present_state = state_mode_0 else
             input_2;
 
-done <= '1' when present_state = state_done else '0';
+--done <= '1' when present_state = state_done else '0';
 
-CE_common <= '1' when present_state = state_mode_0 or present_state = state_mode_1 else '0';
+--CE_common <= '1' when present_state = state_mode_0 or present_state = state_mode_1 else '0';
+ceOut <= CE_common;
 statesig <= "00" when present_state = state_reset else 
     "01" when present_state = state_mode_0 else
     "10" when present_state = state_mode_1 else
@@ -100,6 +102,9 @@ multiplier_block:process(CLK)
             if RST = '1' then
                 present_state <= state_reset;
                 loop_counter <= 0;
+                done <= '0';
+                CE_common <= '1';
+                
             elsif CE = '1'  then
                 if present_state = state_reset then
                 -- matrix multiplication
@@ -113,12 +118,16 @@ multiplier_block:process(CLK)
                     if loop_counter = H+N+1 then 
                         present_state <= state_done;
                         loop_counter <= 0;
+                        CE_common <= '0';
+                        done <= '1';
                     end if;
                 elsif present_state = state_mode_1 then
                     loop_counter <= loop_counter + 1;
-                    if loop_counter = 3 then 
+                    if loop_counter = 2 then 
                         present_state <= state_done;
                         loop_counter <= 0;
+                        done <= '1';
+                        CE_common <= '0';
                     end if;                   
                 end if;
             end if;

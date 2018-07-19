@@ -13,48 +13,181 @@ add_force {/ram_cell/\input_vector[5] } -radix hex {06 0ns}
 add_force {/ram_cell/\input_vector[6] } -radix hex {07 0ns}
 add_force {/ram_cell/\input_vector[7] } -radix hex {08 0ns}
 
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
-run 5 ns
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv1[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {00 0ns}
 run 5 ns
 
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
-run 5 ns
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv1[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {01 0ns}
+
 run 5 ns
 
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
-run 5 ns
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv1[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {00 0ns}
+
 run 5 ns
 
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {01 0ns}
+
 run 5 ns
-add_force {/ram_cell/\write_bram_value[0] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[1] } -radix hex {01 0ns}
-add_force {/ram_cell/\write_bram_value[2] } -radix hex {00 0ns}
-add_force {/ram_cell/\write_bram_value[3] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {00 0ns}
+
+run 5 ns
+
+add_force {/ram_cell/\wv1[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {01 0ns}
+
+run 5 ns
+
+
+add_force {/ram_cell/\wv1[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {00 0ns}
+
+run 5 ns
+
+add_force {/ram_cell/\wv1[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[0] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[0] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[1] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[1] } -radix hex {01 0ns}
+
+add_force {/ram_cell/\wv1[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv2[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv3[2] } -radix hex {00 0ns}
+add_force {/ram_cell/\wv4[2] } -radix hex {00 0ns}
+
+add_force {/ram_cell/\wv1[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv2[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv3[3] } -radix hex {01 0ns}
+add_force {/ram_cell/\wv4[3] } -radix hex {01 0ns}
+
 run 5 ns
 
 add_force {/ram_cell/start_bram_assign} -radix hex {0 0ns}

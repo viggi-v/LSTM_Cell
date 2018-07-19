@@ -1,4 +1,7 @@
-Running: xsim.dir/mmx_unit_time_synth/xsimk -simmode gui -wdb mmx_unit_time_synth.wdb -simrunnum 0 -socket 52897
+Running: xsim.dir/mmx_unit_time_synth/xsimk -simmode gui -wdb mmx_unit_time_synth.wdb -simrunnum 0 -socket 51186
 Design successfully loaded
-Design Loading Memory Usage: 45556 KB (Peak: 45556 KB)
-Design Loading CPU Usage: 20 ms
+Design Loading Memory Usage: 45596 KB (Peak: 45596 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 132088 KB (Peak: 192868 KB)
+Simulation CPU Usage: 100 ms

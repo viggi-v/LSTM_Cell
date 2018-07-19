@@ -1,5 +1,21 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/new/max.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MULT_ACC_LD
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dual_port_ram
+ERROR: [VRFC 10-1471] type error near data_in ; current type signed; expected type std_ulogic_vector [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:41]
+ERROR: [VRFC 10-925] indexed name is not a signed [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:48]
+ERROR: [VRFC 10-925] indexed name is not a signed [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:50]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:28]
+INFO: [VRFC 10-240] VHDL file /home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd ignored due to errors
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/function_unit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity sigmoid_unit
+WARNING: [VRFC 10-1193] overwriting existing primary unit package_interface [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd:6]
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simple_multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mm_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram_cell
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mma_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mmx_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier_with_adder

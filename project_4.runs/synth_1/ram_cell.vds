@@ -1,0 +1,883 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Jul 19 14:13:04 2018
+# Process ID: 30599
+# Current directory: /home/vighnesh/project_4/project_4.runs/synth_1
+# Command line: vivado -log ram_cell.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_cell.tcl
+# Log file: /home/vighnesh/project_4/project_4.runs/synth_1/ram_cell.vds
+# Journal file: /home/vighnesh/project_4/project_4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ram_cell.tcl -notrace
+Command: synth_design -top ram_cell -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30620 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1268.750 ; gain = 84.875 ; free physical = 8026 ; free virtual = 27592
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ram_cell' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:31]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:28]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dual_port_ram' (1#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:28]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:142]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:142]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:142]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:161]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:161]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:161]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:161]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:180]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:180]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:180]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:180]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:199]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:199]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:199]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'dual_port_ram' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd:9' bound to instance 'bram_instance' of component 'dual_port_ram' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:199]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mm_unit' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:18' bound to instance 'mm_unit_instance' of component 'mm_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'mm_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:37]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'simple_multiplier' (2#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:80]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:80]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element single_loop_counter_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'mm_unit' (3#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd:37]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mmx_unit' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:9' bound to instance 'mmx_unit_1' of component 'mmx_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'mmx_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:33]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:69]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:69]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:69]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'simple_multiplier' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:6' bound to instance 'mul0' of component 'simple_multiplier' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'mmx_unit' (4#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:33]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mmx_unit' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd:9' bound to instance 'mmx_unit_2' of component 'mmx_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:251]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mma_unit' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:9' bound to instance 'mma_unit_1' of component 'mma_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'mma_unit' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:33]
+	Parameter data_width bound to: 16 - type: integer 
+	Parameter H bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'multiplier_with_adder' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:5' bound to instance 'mul0' of component 'multiplier_with_adder' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'multiplier_with_adder' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplier_with_adder' (5#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:19]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'multiplier_with_adder' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:5' bound to instance 'mul0' of component 'multiplier_with_adder' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:69]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'multiplier_with_adder' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:5' bound to instance 'mul0' of component 'multiplier_with_adder' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:69]
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'multiplier_with_adder' declared at '/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:5' bound to instance 'mul0' of component 'multiplier_with_adder' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'mma_unit' (6#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd:33]
+WARNING: [Synth 8-3848] Net dummy_input[3] in module/entity ram_cell does not have driver. [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:125]
+WARNING: [Synth 8-3848] Net dummy_input[2] in module/entity ram_cell does not have driver. [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:125]
+WARNING: [Synth 8-3848] Net dummy_input[1] in module/entity ram_cell does not have driver. [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:125]
+WARNING: [Synth 8-3848] Net dummy_input[0] in module/entity ram_cell does not have driver. [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'ram_cell' (7#1) [/home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd:31]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_0[7]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_0[6]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_0[5]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_0[4]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_1[7]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_1[6]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_1[5]
+WARNING: [Synth 8-3331] design dual_port_ram has unconnected port addr_in_1[4]
+WARNING: [Synth 8-3331] design ram_cell has unconnected port start_bram_read
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1314.359 ; gain = 130.484 ; free physical = 8033 ; free virtual = 27600
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1314.359 ; gain = 130.484 ; free physical = 8035 ; free virtual = 27602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1322.363 ; gain = 138.488 ; free physical = 8035 ; free virtual = 27602
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+INFO: [Synth 8-5544] ROM "done_signal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'mmx_unit'
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'mma_unit'
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "present_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "port_en_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+*
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'mmx_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+*
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'mma_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1338.379 ; gain = 154.504 ; free physical = 8022 ; free virtual = 27590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 24    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              144 Bit         RAMs := 16    
++---Muxes : 
+	   4 Input     33 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 24    
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram_cell 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module simple_multiplier 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module mm_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module mmx_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiplier_with_adder 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     33 Bit        Muxes := 1     
+Module mma_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module dual_port_ram 
+Detailed RTL Component Info : 
++---RAMs : 
+	              144 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'generate_mac_units[1].mul0/AinR_reg[15:0]' into 'generate_mac_units[0].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[2].mul0/AinR_reg[15:0]' into 'generate_mac_units[0].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[3].mul0/AinR_reg[15:0]' into 'generate_mac_units[0].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+DSP Report: Generating DSP generate_mac_units[0].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[0].mul0/BinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/ACC_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/MULTR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/plusOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/multOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[1].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[1].mul0/BinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/ACC_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/MULTR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/plusOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/multOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[2].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[2].mul0/BinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/ACC_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/MULTR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/plusOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/multOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[3].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[3].mul0/BinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/ACC_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/MULTR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/plusOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/multOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+DSP Report: Generating DSP generate_mac_units[0].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[0].mul0/BinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/ACC_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/MULTR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/plusOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/multOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[1].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[1].mul0/BinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/AinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/ACC_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/MULTR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/plusOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/multOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[2].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[2].mul0/BinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/AinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/ACC_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/MULTR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/plusOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/multOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[3].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[3].mul0/BinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/AinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/ACC_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/MULTR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/plusOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/multOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/MULTR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd:31]
+DSP Report: Generating DSP generate_mac_units[0].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[0].mul0/BinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/ACC_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: register generate_mac_units[0].mul0/MULTR_reg is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/plusOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[0].mul0/multOp is absorbed into DSP generate_mac_units[0].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[1].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[1].mul0/BinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/AinR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/ACC_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: register generate_mac_units[1].mul0/MULTR_reg is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/plusOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[1].mul0/multOp is absorbed into DSP generate_mac_units[1].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[2].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[2].mul0/BinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/AinR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/ACC_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: register generate_mac_units[2].mul0/MULTR_reg is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/plusOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[2].mul0/multOp is absorbed into DSP generate_mac_units[2].mul0/ACC_reg.
+DSP Report: Generating DSP generate_mac_units[3].mul0/ACC_reg, operation Mode is: (P+(A2*B2)')'.
+DSP Report: register generate_mac_units[3].mul0/BinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/AinR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/ACC_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: register generate_mac_units[3].mul0/MULTR_reg is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/plusOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+DSP Report: operator generate_mac_units[3].mul0/multOp is absorbed into DSP generate_mac_units[3].mul0/ACC_reg.
+INFO: [Synth 8-4471] merging register 'generate_mac_units[0].mul0/BinR_reg[15:0]' into 'generate_mac_units[0].mul0/BinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[1].mul0/BinR_reg[15:0]' into 'generate_mac_units[1].mul0/BinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[2].mul0/BinR_reg[15:0]' into 'generate_mac_units[2].mul0/BinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[3].mul0/BinR_reg[15:0]' into 'generate_mac_units[3].mul0/BinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[0].mul0/AinR_reg[15:0]' into 'generate_mac_units[0].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[1].mul0/AinR_reg[15:0]' into 'generate_mac_units[1].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[2].mul0/AinR_reg[15:0]' into 'generate_mac_units[2].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+INFO: [Synth 8-4471] merging register 'generate_mac_units[3].mul0/AinR_reg[15:0]' into 'generate_mac_units[3].mul0/AinR_reg[15:0]' [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/BinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[0].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[1].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[2].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element generate_mac_units[3].mul0/AinR_reg was removed.  [/home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd:33]
+DSP Report: Generating DSP generate_mac_units[0].mul0/MULTR0, operation Mode is: A2*B2.
+DSP Report: register generate_mac_units[0].mul0/BinR_reg is absorbed into DSP generate_mac_units[0].mul0/MULTR0.
+DSP Report: register generate_mac_units[0].mul0/AinR_reg is absorbed into DSP generate_mac_units[0].mul0/MULTR0.
+DSP Report: operator generate_mac_units[0].mul0/MULTR0 is absorbed into DSP generate_mac_units[0].mul0/MULTR0.
+DSP Report: Generating DSP generate_mac_units[1].mul0/MULTR0, operation Mode is: A2*B2.
+DSP Report: register generate_mac_units[1].mul0/BinR_reg is absorbed into DSP generate_mac_units[1].mul0/MULTR0.
+DSP Report: register generate_mac_units[1].mul0/AinR_reg is absorbed into DSP generate_mac_units[1].mul0/MULTR0.
+DSP Report: operator generate_mac_units[1].mul0/MULTR0 is absorbed into DSP generate_mac_units[1].mul0/MULTR0.
+DSP Report: Generating DSP generate_mac_units[2].mul0/MULTR0, operation Mode is: A2*B2.
+DSP Report: register generate_mac_units[2].mul0/BinR_reg is absorbed into DSP generate_mac_units[2].mul0/MULTR0.
+DSP Report: register generate_mac_units[2].mul0/AinR_reg is absorbed into DSP generate_mac_units[2].mul0/MULTR0.
+DSP Report: operator generate_mac_units[2].mul0/MULTR0 is absorbed into DSP generate_mac_units[2].mul0/MULTR0.
+DSP Report: Generating DSP generate_mac_units[3].mul0/MULTR0, operation Mode is: A2*B2.
+DSP Report: register generate_mac_units[3].mul0/BinR_reg is absorbed into DSP generate_mac_units[3].mul0/MULTR0.
+DSP Report: register generate_mac_units[3].mul0/AinR_reg is absorbed into DSP generate_mac_units[3].mul0/MULTR0.
+DSP Report: operator generate_mac_units[3].mul0/MULTR0 is absorbed into DSP generate_mac_units[3].mul0/MULTR0.
+WARNING: [Synth 8-3331] design ram_cell has unconnected port start_bram_read
+WARNING: [Synth 8-3332] Sequential element (mmx_unit_1/done_reg) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mmx_unit_2/done_reg) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/AinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[0].mul0/BinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/AinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[1].mul0/BinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/AinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[14]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[13]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[12]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[11]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[10]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[9]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[8]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[7]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[6]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[5]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[4]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[3]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[2]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[1]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[2].mul0/BinR_reg[0]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[3].mul0/AinR_reg[15]) is unused and will be removed from module ram_cell.
+WARNING: [Synth 8-3332] Sequential element (mma_unit_1/generate_mac_units[3].mul0/AinR_reg[14]) is unused and will be removed from module ram_cell.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7806 ; free virtual = 27375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                     | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+|ram_cell    | generate_BRAM_module1[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|simple_multiplier     | (P+(A2*B2)')' | 16     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|multiplier_with_adder | A2*B2         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|multiplier_with_adder | A2*B2         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|multiplier_with_adder | A2*B2         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|multiplier_with_adder | A2*B2         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                     | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+|ram_cell    | generate_BRAM_module1[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module1[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module2[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module3[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[0].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[1].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[2].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
+|ram_cell    | generate_BRAM_module4[3].bram_instance/ram_reg | Implied   | 16 x 16              | RAM16X1D x 16   | 
++------------+------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    58|
+|3     |DSP48E1  |    16|
+|4     |LUT1     |     3|
+|5     |LUT2     |   413|
+|6     |LUT3     |    92|
+|7     |LUT4     |   325|
+|8     |LUT5     |     4|
+|9     |LUT6     |    54|
+|10    |MUXF7    |    16|
+|11    |RAM16X1D |   256|
+|12    |FDRE     |   233|
+|13    |FDSE     |     4|
+|14    |IBUF     |   388|
+|15    |OBUF     |   539|
+|16    |OBUFT    |   256|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+-------------------------+------+
+|      |Instance                                   |Module                   |Cells |
++------+-------------------------------------------+-------------------------+------+
+|1     |top                                        |                         |  2658|
+|2     |  \generate_BRAM_module1[0].bram_instance  |dual_port_ram            |    32|
+|3     |  \generate_BRAM_module1[1].bram_instance  |dual_port_ram_0          |    32|
+|4     |  \generate_BRAM_module1[2].bram_instance  |dual_port_ram_1          |    32|
+|5     |  \generate_BRAM_module1[3].bram_instance  |dual_port_ram_2          |    32|
+|6     |  \generate_BRAM_module2[0].bram_instance  |dual_port_ram_3          |    32|
+|7     |  \generate_BRAM_module2[1].bram_instance  |dual_port_ram_4          |    32|
+|8     |  \generate_BRAM_module2[2].bram_instance  |dual_port_ram_5          |    32|
+|9     |  \generate_BRAM_module2[3].bram_instance  |dual_port_ram_6          |    32|
+|10    |  \generate_BRAM_module3[0].bram_instance  |dual_port_ram_7          |    32|
+|11    |  \generate_BRAM_module3[1].bram_instance  |dual_port_ram_8          |    32|
+|12    |  \generate_BRAM_module3[2].bram_instance  |dual_port_ram_9          |    32|
+|13    |  \generate_BRAM_module3[3].bram_instance  |dual_port_ram_10         |    32|
+|14    |  \generate_BRAM_module4[0].bram_instance  |dual_port_ram_11         |    32|
+|15    |  \generate_BRAM_module4[1].bram_instance  |dual_port_ram_12         |    32|
+|16    |  \generate_BRAM_module4[2].bram_instance  |dual_port_ram_13         |    32|
+|17    |  \generate_BRAM_module4[3].bram_instance  |dual_port_ram_14         |    33|
+|18    |  mm_unit_instance                         |mm_unit                  |    34|
+|19    |    \generate_mac_units[0].mul0            |simple_multiplier_26     |     1|
+|20    |    \generate_mac_units[1].mul0            |simple_multiplier_27     |     1|
+|21    |    \generate_mac_units[2].mul0            |simple_multiplier_28     |     1|
+|22    |    \generate_mac_units[3].mul0            |simple_multiplier_29     |    17|
+|23    |  mma_unit_1                               |mma_unit                 |   451|
+|24    |    \generate_mac_units[0].mul0            |multiplier_with_adder    |   108|
+|25    |    \generate_mac_units[1].mul0            |multiplier_with_adder_23 |   108|
+|26    |    \generate_mac_units[2].mul0            |multiplier_with_adder_24 |   108|
+|27    |    \generate_mac_units[3].mul0            |multiplier_with_adder_25 |   109|
+|28    |  mmx_unit_1                               |mmx_unit                 |   198|
+|29    |    \generate_mac_units[0].mul0            |simple_multiplier_19     |    81|
+|30    |    \generate_mac_units[1].mul0            |simple_multiplier_20     |    33|
+|31    |    \generate_mac_units[2].mul0            |simple_multiplier_21     |    33|
+|32    |    \generate_mac_units[3].mul0            |simple_multiplier_22     |    33|
+|33    |  mmx_unit_2                               |mmx_unit_15              |   150|
+|34    |    \generate_mac_units[0].mul0            |simple_multiplier        |    33|
+|35    |    \generate_mac_units[1].mul0            |simple_multiplier_16     |    33|
+|36    |    \generate_mac_units[2].mul0            |simple_multiplier_17     |    33|
+|37    |    \generate_mac_units[3].mul0            |simple_multiplier_18     |    33|
++------+-------------------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7807 ; free virtual = 27376
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 206 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.004 ; gain = 331.129 ; free physical = 7810 ; free virtual = 27379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.012 ; gain = 331.129 ; free physical = 7810 ; free virtual = 27379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 734 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 175 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1643.031 ; gain = 465.008 ; free physical = 7778 ; free virtual = 27347
+INFO: [Common 17-1381] The checkpoint '/home/vighnesh/project_4/project_4.runs/synth_1/ram_cell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ram_cell_utilization_synth.rpt -pb ram_cell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1667.043 ; gain = 0.000 ; free physical = 7775 ; free virtual = 27344
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 19 14:13:52 2018...

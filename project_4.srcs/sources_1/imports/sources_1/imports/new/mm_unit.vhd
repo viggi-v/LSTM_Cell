@@ -24,7 +24,7 @@ entity mm_unit is
   Port (
   CLK, RST, CE         : in std_logic;
   
-  input_1           : in vector(H+N-1 downto 0)(data_width - 1 downto 0);
+  input_1           : in signed(data_width - 1 downto 0);
   
   weight_vector     : in vector(H-1 downto 0)(data_width-1 downto 0);
   
@@ -92,7 +92,7 @@ generate_mac_units: for I in 0 to H-1 generate
 end generate generate_mac_units;
 
 
-
+A_signal <= input_1 when loop_counter < H+N else (others => '0');
 
 multiplier_block:process(CLK, RST)
     begin
@@ -102,11 +102,11 @@ multiplier_block:process(CLK, RST)
                 loop_counter <= 0;
                 done_signal <= '0';
                 common_enable <= '1';
-                A_signal <= (others => '0');
-            elsif CE = '1' then         
-               if loop_counter < H+N then
-                    A_signal <= input_1(loop_counter);
-               end if;
+--                A_signal <= (others => '0');
+              elsif CE = '1' then         
+--               if loop_counter < H+N then
+--                    A_signal <= input_1;
+--               end if;
                if done_signal = '0' then
                    loop_counter <= loop_counter + 1;
                end if;

@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/new/bram_module.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd" \
+"../../../../project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd" \
+"../../../../project_4.srcs/sources_1/new/cell.vhd" \
+"../../../../project_4.srcs/sources_1/new/mma_unit.vhd" \
+"../../../../project_4.srcs/sources_1/new/mmx_unit.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/new/multiplier_with_adder.vhd" \
+
+# Do not sort compile order
+nosort
