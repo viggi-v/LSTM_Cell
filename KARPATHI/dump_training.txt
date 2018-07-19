@@ -1,0 +1,14 @@
+package cunn not found!	
+package cutorch not found!	
+If cutorch and cunn are installed, your CUDA toolkit may be improperly configured.	
+Check your CUDA toolkit installation, rebuild cutorch and cunn, and try again.	
+Falling back on CPU mode	
+loading data files...	
+cutting off end of data so that the batches/sequences divide evenly	
+reshaping tensor...	
+data load done. Number of data batches in train: 423, val: 23, test: 0	
+vocab size: 65	
+creating an lstm with 2 layers	
+setting forget gate biases to 1 in LSTM layer 1	
+setting forget gate biases to 1 in LSTM layer 2	
+number of parameters in the model: 240321	
