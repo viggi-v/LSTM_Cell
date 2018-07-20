@@ -11,105 +11,101 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1091613000fs"></ZoomStartTime>
-      <ZoomEndTime time="1099053001fs"></ZoomEndTime>
-      <Cursor1Time time="1094533000fs"></Cursor1Time>
+      <ZoomStartTime time="915000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1299000001fs"></ZoomEndTime>
+      <Cursor1Time time="1015000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="228"></NameColumnWidth>
-      <ValueColumnWidth column_width="337"></ValueColumnWidth>
+      <ValueColumnWidth column_width="325"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="64" />
+   <WVObjectSize size="66" />
    <wvobject type="logic" fp_name="/ram_cell/start_bram_read">
       <obj_property name="ElementShortName">start_bram_read</obj_property>
       <obj_property name="ObjectShortName">start_bram_read</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/ram_cell/CLK">
-      <obj_property name="ElementShortName">CLK</obj_property>
-      <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/ram_cell/RST">
       <obj_property name="ElementShortName">RST</obj_property>
       <obj_property name="ObjectShortName">RST</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S1[0] ">
-      <obj_property name="ElementShortName">\S1[0] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S1[0] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S1[0] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S1[0] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S1[1] ">
-      <obj_property name="ElementShortName">\S1[1] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S1[1] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S1[1] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S1[1] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S1[2] ">
-      <obj_property name="ElementShortName">\S1[2] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S1[2] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S1[2] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S1[2] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S1[3] ">
-      <obj_property name="ElementShortName">\S1[3] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S1[3] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S1[3] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S1[3] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S2[0] ">
-      <obj_property name="ElementShortName">\S2[0] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S2[0] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S2[0] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S2[0] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S2[1] ">
-      <obj_property name="ElementShortName">\S2[1] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S2[1] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S2[1] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S2[1] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S2[2] ">
-      <obj_property name="ElementShortName">\S2[2] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S2[2] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S2[2] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S2[2] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S2[3] ">
-      <obj_property name="ElementShortName">\S2[3] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S2[3] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S2[3] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S2[3] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S3[0] ">
-      <obj_property name="ElementShortName">\S3[0] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S3[0] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S3[0] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S3[0] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S3[1] ">
-      <obj_property name="ElementShortName">\S3[1] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S3[1] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S3[1] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S3[1] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S3[2] ">
-      <obj_property name="ElementShortName">\S3[2] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S3[2] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S3[2] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S3[2] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S3[3] ">
-      <obj_property name="ElementShortName">\S3[3] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S3[3] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S3[3] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S3[3] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S4[0] ">
-      <obj_property name="ElementShortName">\S4[0] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S4[0] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S4[0] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S4[0] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S4[1] ">
-      <obj_property name="ElementShortName">\S4[1] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S4[1] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S4[1] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S4[1] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S4[2] ">
-      <obj_property name="ElementShortName">\S4[2] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S4[2] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S4[2] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S4[2] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\S4[3] ">
-      <obj_property name="ElementShortName">\S4[3] [16:0]</obj_property>
-      <obj_property name="ObjectShortName">\S4[3] [16:0]</obj_property>
+      <obj_property name="ElementShortName">\S4[3] [32:0]</obj_property>
+      <obj_property name="ObjectShortName">\S4[3] [32:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/ram_cell/done">
@@ -117,104 +113,108 @@
       <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[0] ">
-      <obj_property name="ElementShortName">\input_vector[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[1] ">
-      <obj_property name="ElementShortName">\input_vector[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[2] ">
-      <obj_property name="ElementShortName">\input_vector[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[3] ">
-      <obj_property name="ElementShortName">\input_vector[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[4] ">
-      <obj_property name="ElementShortName">\input_vector[4] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[4] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[4] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[4] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[5] ">
-      <obj_property name="ElementShortName">\input_vector[5] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[5] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[5] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[5] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[6] ">
-      <obj_property name="ElementShortName">\input_vector[6] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[6] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[6] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[6] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\input_vector[7] ">
-      <obj_property name="ElementShortName">\input_vector[7] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\input_vector[7] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\input_vector[7] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\input_vector[7] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r1[0] ">
-      <obj_property name="ElementShortName">\r1[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r1[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r1[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r1[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r1[1] ">
-      <obj_property name="ElementShortName">\r1[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r1[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r1[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r1[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r1[2] ">
-      <obj_property name="ElementShortName">\r1[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r1[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r1[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r1[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r1[3] ">
-      <obj_property name="ElementShortName">\r1[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r1[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r1[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r1[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r2[0] ">
-      <obj_property name="ElementShortName">\r2[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r2[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r2[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r2[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r2[1] ">
-      <obj_property name="ElementShortName">\r2[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r2[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r2[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r2[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r2[2] ">
-      <obj_property name="ElementShortName">\r2[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r2[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r2[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r2[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r2[3] ">
-      <obj_property name="ElementShortName">\r2[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r2[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r2[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r2[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r3[0] ">
-      <obj_property name="ElementShortName">\r3[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r3[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r3[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r3[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r3[1] ">
-      <obj_property name="ElementShortName">\r3[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r3[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r3[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r3[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r3[2] ">
-      <obj_property name="ElementShortName">\r3[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r3[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r3[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r3[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r3[3] ">
-      <obj_property name="ElementShortName">\r3[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r3[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r3[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r3[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r4[0] ">
-      <obj_property name="ElementShortName">\r4[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r4[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r4[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r4[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r4[1] ">
-      <obj_property name="ElementShortName">\r4[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r4[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r4[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r4[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r4[2] ">
-      <obj_property name="ElementShortName">\r4[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r4[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r4[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r4[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\r4[3] ">
-      <obj_property name="ElementShortName">\r4[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\r4[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\r4[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\r4[3] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ram_cell/cestat">
+      <obj_property name="ElementShortName">cestat</obj_property>
+      <obj_property name="ObjectShortName">cestat</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/read">
-      <obj_property name="ElementShortName">read[3:0]</obj_property>
-      <obj_property name="ObjectShortName">read[3:0]</obj_property>
+      <obj_property name="ElementShortName">read[7:0]</obj_property>
+      <obj_property name="ObjectShortName">read[7:0]</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/ram_cell/start_bram_assign">
       <obj_property name="ElementShortName">start_bram_assign</obj_property>
@@ -228,68 +228,76 @@
       <obj_property name="ElementShortName">state[1:0]</obj_property>
       <obj_property name="ObjectShortName">state[1:0]</obj_property>
    </wvobject>
+   <wvobject type="logic" fp_name="/ram_cell/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv1[0] ">
-      <obj_property name="ElementShortName">\wv1[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv1[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv1[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv1[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv1[1] ">
-      <obj_property name="ElementShortName">\wv1[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv1[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv1[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv1[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv1[2] ">
-      <obj_property name="ElementShortName">\wv1[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv1[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv1[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv1[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv1[3] ">
-      <obj_property name="ElementShortName">\wv1[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv1[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv1[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv1[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv2[0] ">
-      <obj_property name="ElementShortName">\wv2[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv2[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv2[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv2[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv2[1] ">
-      <obj_property name="ElementShortName">\wv2[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv2[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv2[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv2[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv2[2] ">
-      <obj_property name="ElementShortName">\wv2[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv2[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv2[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv2[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv2[3] ">
-      <obj_property name="ElementShortName">\wv2[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv2[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv2[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv2[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv3[0] ">
-      <obj_property name="ElementShortName">\wv3[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv3[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv3[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv3[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv3[1] ">
-      <obj_property name="ElementShortName">\wv3[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv3[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv3[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv3[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv3[2] ">
-      <obj_property name="ElementShortName">\wv3[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv3[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv3[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv3[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv3[3] ">
-      <obj_property name="ElementShortName">\wv3[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv3[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv3[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv3[3] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv4[0] ">
-      <obj_property name="ElementShortName">\wv4[0] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv4[0] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv4[0] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv4[0] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv4[1] ">
-      <obj_property name="ElementShortName">\wv4[1] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv4[1] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv4[1] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv4[1] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv4[2] ">
-      <obj_property name="ElementShortName">\wv4[2] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv4[2] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv4[2] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv4[2] [15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/ram_cell/\wv4[3] ">
-      <obj_property name="ElementShortName">\wv4[3] [7:0]</obj_property>
-      <obj_property name="ObjectShortName">\wv4[3] [7:0]</obj_property>
+      <obj_property name="ElementShortName">\wv4[3] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\wv4[3] [15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ram_cell/\write_count[0]_i_2_n_0 ">
+      <obj_property name="ElementShortName">\write_count[0]_i_2_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\write_count[0]_i_2_n_0 </obj_property>
    </wvobject>
 </wave_config>

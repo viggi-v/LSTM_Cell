@@ -1,8 +1,10 @@
 
 # Assumes sigmoid units and tanh units gives f(x) = x
 import numpy as np
-H = 4
-N = 4
+import time
+
+H = 128
+N = 60
 data_width  = 8
 
 resultfile = "result2.txt"
@@ -15,13 +17,16 @@ wc = np.rint(4 * np.random.random_sample((H,H+N)))
 input_vector  = np.rint(4 * np.random.random_sample(H+N))
 old_cell_state= np.rint(4 * np.random.random_sample(H))
 
+start_time = time.time()
+
 ft  = np.array([np.inner(wf[i],input_vector) for i in range(0,H)])
 it  = np.array([np.inner(wi[i],input_vector) for i in range(0,H)])
 _ct = np.array([np.inner(wc[i],input_vector) for i in range(0,H)])
 ot  = np.array([np.inner(wo[i],input_vector) for i in range(0,H)])
-
 ct = np.add(np.multiply(ft,old_cell_state),np.multiply(it,_ct))
 ht = np.multiply(ct,ot)
+
+print("--- %s seconds ---" % (time.time() - start_time))
 
 with open(resultfile,"w+") as outfile:
 	for i in range(0,H+N):

@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a200tsbg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,10 +33,13 @@ read_vhdl -vhdl2008 -library xil_defaultlib {
   /home/vighnesh/project_4/project_4.srcs/sources_1/new/bram_module.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/mm_unit.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/new/cell.vhd
+  /home/vighnesh/project_4/project_4.srcs/sources_1/new/function_unit.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/new/mma_unit.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/new/mmx_unit.vhd
+  /home/vighnesh/project_4/project_4.srcs/sources_1/new/tanh_unit.vhd
 }
 read_vhdl -library xil_defaultlib {
+  /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/new/max.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/package_interface.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/imports/sources_1/imports/new/multiplier.vhd
   /home/vighnesh/project_4/project_4.srcs/sources_1/new/multiplier_with_adder.vhd

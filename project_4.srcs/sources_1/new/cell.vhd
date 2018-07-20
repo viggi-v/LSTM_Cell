@@ -9,10 +9,11 @@ use xil_defaultlib.package_interface.all;
 entity ram_cell is
   Generic (
     data_width : integer := 16;
-    H : integer := 4;
-    N : integer := 4
+    H : integer := 128;
+    N : integer := 60
   );
   Port (
+  reset: in std_logic;
   start_bram_assign : in std_logic;
   input_vector : in vector(H+N-1 downto 0)(data_width - 1 downto 0);
   start_bram_read : in std_logic;
@@ -112,7 +113,32 @@ component dual_port_ram
         data_out_1 : out signed(data_width - 1 downto 0)   --output data from port 1.
     );
 end component;
-
+component tanh_unit is
+    Generic(
+            data_width : integer := 16;
+            H : integer := 4
+        );
+    Port ( input : in vector(H-1  downto 0)(data_width-1 downto 0);
+           CLK : in STD_LOGIC;
+           CE : in STD_LOGIC;
+           RST : in STD_LOGIC;
+           output : out vector(H-1  downto 0)(4*data_width downto 0);
+           done : out std_logic
+          );
+end component;
+component sigmoid_unit is
+    Generic(
+            data_width : integer := 16;
+            H : integer := 4
+        );
+    Port ( input : in vector(H-1  downto 0)(data_width-1 downto 0);
+           CLK : in STD_LOGIC;
+           CE : in STD_LOGIC;
+           RST : in STD_LOGIC;
+           output : out vector(H-1  downto 0)(4*data_width downto 0);
+           done : out std_logic
+          );
+end component;
 -- signals for RAM
 signal wr_en, port_en_0, port_en_1 : std_logic := '0';
 signal read_addr, wr_addr : std_logic_vector(7 downto 0);
@@ -124,18 +150,23 @@ signal mul_count : integer := 0;
 signal CE : std_logic;
 signal dummy_input : vector(H - 1 downto 0)(data_width - 1 downto 0);
 
-type states is (state_idle, state_write, state_mul);
+type states is (state_idle, state_write, state_mul,state_done);
 signal present_state: states := state_idle;
 
 
 signal S1_feed, S2_feed, S3_feed : vector(H-1 downto 0)(data_width-1 downto 0);
-
+signal function_gen_out1,function_gen_out2,function_gen_out3 : vector(H-1 downto 0)(4*data_width downto 0);
+signal S2_or_S4 : vector(H-1 downto 0)(data_width-1 downto 0);
+signal S1_input1, S2_input1, S2_input2 : vector(H-1 downto 0)(data_width-1 downto 0);
 begin
 
 generate_foo: for I in 0 to H-1 generate
     S1_feed(I) <= S1(I)(data_width - 1 downto 0);
     S2_feed(I) <= S2(I)(data_width - 1 downto 0);
     S3_feed(I) <= S3(I)(data_width - 1 downto 0);
+    S1_input1(I) <= function_gen_out1(I)(data_width - 1 downto 0);
+    S2_input1(I) <= function_gen_out2(I)(data_width - 1 downto 0);
+    S2_input2(I) <= function_gen_out3(I)(data_width - 1 downto 0);    
 end generate;
 
 generate_BRAM_module1: for I in 0 to H-1 generate
@@ -246,7 +277,7 @@ mmx_unit_1: mmx_unit
         S => S1,
         mode => '0',
         input_2 => dummy_input,
-        input_3 => S1_feed
+        input_3 => S1_input1
         );
 mmx_unit_2: mmx_unit
     generic map(
@@ -262,8 +293,8 @@ mmx_unit_2: mmx_unit
         weight_vector => r2,
         S => S2,
         mode => '0',
-        input_2 => S3_feed,
-        input_3 => S2_feed
+        input_2 => S2_input1,
+        input_3 => S2_input2
         );
 mma_unit_1: mma_unit
     generic map(
@@ -279,15 +310,49 @@ mma_unit_1: mma_unit
         weight_vector => r3,
         S => S3,
         mode => '0',
-        input_2 => S2_feed,
+        input_2 => S2_input1,
         input_3 => S1_feed
     );
-                
+ sigmoid_unit_1: sigmoid_unit
+    generic map(
+        H => H,
+        data_width => data_width
+    )               
+    port map(
+        clk => clk,
+        CE => CE,
+        RST => RST,
+        input => S1_feed,
+        output => function_gen_out1
+    );
+sigmoid_unit_2: sigmoid_unit
+       generic map(
+           H => H,
+           data_width => data_width
+       )               
+       port map(
+           clk => clk,
+           CE => CE,
+           RST => RST,
+           input => S2_or_S4,
+           output => function_gen_out2
+       );
+ tanh_unit_1: tanh_unit
+          generic map(
+              H => H,
+              data_width => data_width
+          )               
+          port map(
+              clk => clk,
+              CE => CE,
+              RST => RST,
+              input => S3_feed,
+              output => function_gen_out3
+          );
         
 
 read_addr <= std_logic_vector(to_unsigned(mul_count, 8));
 wr_addr <= std_logic_vector(to_unsigned(write_count, 8));
-
 read <= read_addr;
 
 wr_en <= '1' when present_state = state_write else '0';
@@ -304,7 +369,9 @@ state <= "00" when present_state = state_idle else
 writeRam: process(clk)
     begin
         if rising_edge(clk) then
-            if present_state = state_idle then
+            if reset = '1' then
+                present_state <= state_idle;
+            elsif present_state = state_idle then
                 if start_bram_assign = '1' then
                     present_state <= state_write;
                 elsif start_mul = '1' then
@@ -312,12 +379,12 @@ writeRam: process(clk)
                 end if;
             end if;
             
-            if present_state = state_write and write_count = H+N-1 then
-                present_state <= state_idle;
+            if present_state = state_write and write_count = H+N then
+                present_state <= state_done;
             end if;
             
             if present_state = state_mul and mul_count = H+N-1 then
-                present_state <= state_idle;
+                present_state <= state_done;
             end if;
         end if;
     end process writeRam;

@@ -16,11 +16,6 @@ entity sigmoid_unit is
            CLK : in STD_LOGIC;
            CE : in STD_LOGIC;
            RST : in STD_LOGIC;
-           lc : out integer;
-           condition1 : out integer;
-           condition2 : out integer;
-           condition3 : out integer;
-           condition4 : out integer;
            output : out vector(H-1  downto 0)(4*data_width downto 0);
            done : out std_logic
           );
@@ -99,30 +94,30 @@ end generate generate_sigmoid_units;
 
 C_vector_in <= C_vector when loop_counter < 4 else D_vector;
 
-condition1      <= 0 when input(0) < condition_vector(0) else
-                   1 when input(0) < condition_vector(1) else
-                   2 when input(0) < condition_vector(2) else
-                   3 when input(0) < condition_vector(3) else
-                   4 when input(0) < condition_vector(4) else
-                   5;
-condition2      <= 0 when input(1) < condition_vector(0) else
-                   1 when input(1) < condition_vector(1) else
-                   2 when input(1) < condition_vector(2) else
-                   3 when input(1) < condition_vector(3) else
-                   4 when input(1) < condition_vector(4) else
-                   5;
-condition3      <= 0 when input(2) < condition_vector(0) else
-                   1 when input(2) < condition_vector(1) else
-                   2 when input(2) < condition_vector(2) else
-                   3 when input(2) < condition_vector(3) else
-                   4 when input(2) < condition_vector(4) else
-                   5;
-condition4      <= 0 when input(3) < condition_vector(0) else
-                   1 when input(3) < condition_vector(1) else
-                   2 when input(3) < condition_vector(2) else
-                   3 when input(3) < condition_vector(3) else
-                   4 when input(3) < condition_vector(4) else
-                   5;
+--condition1      <= 0 when input(0) < condition_vector(0) else
+--                   1 when input(0) < condition_vector(1) else
+--                   2 when input(0) < condition_vector(2) else
+--                   3 when input(0) < condition_vector(3) else
+--                   4 when input(0) < condition_vector(4) else
+--                   5;
+--condition2      <= 0 when input(1) < condition_vector(0) else
+--                   1 when input(1) < condition_vector(1) else
+--                   2 when input(1) < condition_vector(2) else
+--                   3 when input(1) < condition_vector(3) else
+--                   4 when input(1) < condition_vector(4) else
+--                   5;
+--condition3      <= 0 when input(2) < condition_vector(0) else
+--                   1 when input(2) < condition_vector(1) else
+--                   2 when input(2) < condition_vector(2) else
+--                   3 when input(2) < condition_vector(3) else
+--                   4 when input(2) < condition_vector(4) else
+--                   5;
+--condition4      <= 0 when input(3) < condition_vector(0) else
+--                   1 when input(3) < condition_vector(1) else
+--                   2 when input(3) < condition_vector(2) else
+--                   3 when input(3) < condition_vector(3) else
+--                   4 when input(3) < condition_vector(4) else
+--                   5;
                   
                    
 assign_coefficient_gen: for I in 0 to H-1 generate
@@ -165,6 +160,5 @@ process(clk)
 output <= S_vector;
 done <= '0' when loop_counter < 8 else '1';
 
-lc <= loop_counter;
 
 end Behavioral;

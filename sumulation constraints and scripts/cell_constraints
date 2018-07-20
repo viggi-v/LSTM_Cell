@@ -2,7 +2,7 @@ add_force {/ram_cell/CLK} -radix hex {0 0ns} {1 2500ps} -repeat_every 5000ps
 add_force {/ram_cell/RST} -radix hex {0 0ns}
 add_force {/ram_cell/start_bram_assign} -radix hex {1 0ns}
 add_force {/ram_cell/start_mul} -radix hex {0 0ns}
-
+run 5ns
 
 add_force {/ram_cell/\input_vector[0] } -radix hex {01 0ns}
 add_force {/ram_cell/\input_vector[1] } -radix hex {02 0ns}
@@ -192,8 +192,10 @@ run 5 ns
 
 add_force {/ram_cell/start_bram_assign} -radix hex {0 0ns}
 add_force {/ram_cell/start_mul} -radix hex {1 0ns}
-
-run 15ns
+add_force {/ram_cell/reset} -radix bin {1 0ns}
+run 25ns
+add_force {/ram_cell/reset} -radix bin {0 0ns}
+run 50ns
 
 476. 229
 
