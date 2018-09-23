@@ -1,12 +1,3 @@
-
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
-
---package package_interface is
---        type vector is array(natural range <>) of std_logic_vector;
---        type matrix is array(natural range <>) of vector;
---end package;
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -22,8 +13,7 @@ entity mm_unit is
     N : integer := 4
   );
   Port (
-  CLK, RST, CE         : in std_logic;
-  
+  CLK, RST, CE      : in std_logic;
   input_1           : in signed(data_width - 1 downto 0);
   
   weight_vector     : in vector(H-1 downto 0)(data_width-1 downto 0);
@@ -36,16 +26,13 @@ end mm_unit;
 
 architecture Behavioral of mm_unit is
 
---attribute KEEP_HIERARCHY : string;
---attribute KEEP_HIERARCHY of mm_unit: component is "yes";
-
 component simple_multiplier 
     Generic(
         data_width : integer := 16);
     Port ( 
         CLK           : in std_logic;
-        RST           : in std_logic;                                    -- Synchronous reset
-        CE            : in std_logic;                                    -- Enable
+        RST           : in std_logic;                     -- Synchronous reset
+        CE            : in std_logic;                     -- Enable
         Ain, Bin      : in signed(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
         S             : out signed(2*data_width downto 0)      -- Accumulator output
     );                               

@@ -1,4 +1,7 @@
-
+-- A simple multiplier unit with pipelines
+-- The basic building block, with a three step pipelinable inputs,
+-- which is redundant but built that way to invoke a DSP block per input
+-- does not have an add input
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_SIGNED.ALL;   
@@ -11,7 +14,7 @@ entity simple_multiplier is
         CLK : in std_logic;
         RST : in std_logic; -- Synchronous reset
         CE  : in std_logic; -- enable 
-        Ain, Bin : in std_logic_vector(data_width - 1 downto 0);    -- A and B inputs of the multiplier, C is the Sum input
+        Ain, Bin : in std_logic_vector(data_width - 1 downto 0);    -- A and B inputs of the multiplier
         S : out std_logic_vector(2*data_width downto 0)  -- Accumulator output 
     );                             
 end simple_multiplier;

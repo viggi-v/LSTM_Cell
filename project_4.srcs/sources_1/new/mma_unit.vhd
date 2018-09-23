@@ -1,3 +1,12 @@
+-- MMX unit instantiates H number of simple_multipliers
+-- Has two modes of operation, 0 and 1
+-- mode 0:
+-- Takes just two vectors of size H and produces element wise sum, as a vector
+-- mode 1:
+-- Takes input1 as a single signed vector at a time, of size data_width, and has to be fed with N different elements
+-- at N clock cycles.
+-- weight_vector works just like input_1, and have to be fed with one row of the weight matrix at a time step.
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
